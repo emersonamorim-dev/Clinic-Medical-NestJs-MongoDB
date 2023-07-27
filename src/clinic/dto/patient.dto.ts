@@ -1,7 +1,7 @@
 export class PatientDTO {
-  name: string;
-  age: number;
-  gender: string;
-  phoneNumber: string;
-  address: string; 
+  nome: string;
+  idade: number;
+  sexo: string;
+  telefone: string;
+  endereco: string; 
 }
