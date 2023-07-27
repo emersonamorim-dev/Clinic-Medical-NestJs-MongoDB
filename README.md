@@ -8,15 +8,19 @@ O projeto é estruturado em três partes principais:
 1. Model: Define a estrutura de dados do paciente.
 2. Service: Contém a lógica de negócios para manipular os dados do paciente.
 3. Controller: Gerencia as solicitações e respostas HTTP.
+4. DTO: significa Data Transfer Object. É um padrão de design usado para transferir dados entre camadas de software e/ou sistemas de maneira eficiente e consistente.
 
 ### Model
 O modelo PatientModel define a estrutura de dados para um paciente. Cada paciente tem um nome, idade, sexo, telefone e endereço. Todos os campos, exceto o endereço, são obrigatórios.
 
-###Service
+### Service
 O serviço ClinicService contém a lógica de negócios para manipular os dados do paciente. Ele fornece métodos para criar, recuperar, atualizar e excluir pacientes.
 
 ### Controller
 O controlador ClinicController gerencia as solicitações e respostas HTTP. Ele usa o serviço ClinicService para manipular os dados do paciente e retorna respostas HTTP adequadas.
+
+### DTO
+O PatientDTO é usado para transferir dados de pacientes entre diferentes partes do sistema. Ele define a estrutura dos dados do paciente que serão usados na aplicação. Aqui estão os campos definidos na classe PatientDTO:
 
 
 ### Rotas
