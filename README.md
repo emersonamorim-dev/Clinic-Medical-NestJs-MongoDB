@@ -1,6 +1,6 @@
 ## API de Clinic Medical com NestJs e MongoDB
 
-Codificação de uma API de clínica médica construída com NestJS e Mongoose programado em Typescript. A API permite a criação, recuperação, atualização e exclusão de pacientes.
+Codificação de uma API de clínica médica construída com NestJS e Mongoose programado em Typescript. A API permite a criação, recuperação, atualização e exclusão de pacientes. Implementação de Teste Unitário em Jest do clinic.controller.spec.ts para deixar o código mais testável.
 
 **Estrutura do Projeto**
 O projeto é estruturado em três partes principais:
@@ -22,21 +22,21 @@ O controlador ClinicController gerencia as solicitações e respostas HTTP. Ele 
 ### Rotas
 A API fornece as seguintes rotas:
 
-POST /clinic/patients: Cria um novo paciente.
-GET /clinic/patients: Recupera todos os pacientes.
-GET /clinic/patients/:id: Recupera um paciente pelo ID.
-PUT /clinic/patients/:id: Atualiza um paciente pelo ID.
-DELETE /clinic/patients/:id: Exclui um paciente pelo ID.
+- POST /clinic/patients: Cria um novo paciente.
+- GET /clinic/patients: Recupera todos os pacientes.
+- GET /clinic/patients/:id: Recupera um paciente pelo ID.
+- PUT /clinic/patients/:id: Atualiza um paciente pelo ID.
+- DELETE /clinic/patients/:id: Exclui um paciente pelo ID.
 
 Endpoint de Requisição Post segue o corpo em Json para cadastro via Postman:
 http://localhost:3000/clinic/patients
-{
-  "nome": "Emerson Amorim",
-  "idade": 42,
-  "sexo": "Masculino",
-  "telefone": "1199981981",
-  "endereco": "rua 181"
-}
+1. {
+2.   "nome": "Emerson Amorim",
+3.   "idade": 42,
+4.   "sexo": "Masculino",
+5.   "telefone": "1199981981",
+6.   "endereco": "rua 181"
+7. }
 
 
 ### Como usar
